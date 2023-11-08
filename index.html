@@ -44,6 +44,7 @@
 		<imagetarget id='mid79084 Imagine_Flower Wall_Fix-PRINT' src='targets/mid79084 Imagine_Flower Wall_Fix-PRINT.png'></imagetarget>
 		<imagetarget id='79084 Imagine_Flower Wall_Fix-PRINT' src='targets/79084 Imagine_Flower Wall_Fix-PRINT.png'></imagetarget>
 		<imagetarget id='left79084 Imagine_Flower Wall_Fix-PRINT' src='targets/left79084 Imagine_Flower Wall_Fix-PRINT.png'></imagetarget>
+		<imagetarget id='IMG_0826' src='targets/IMG_0826.jpg'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -100,7 +101,7 @@
         });;
         
     </script>
-    <script src="Build/wavetest.loader.js"></script>
+    <script src="Build/wave.loader.js"></script>
     <script>
             var container = document.querySelector("#unity-container");
             var canvas = document.querySelector("#unity-canvas");
@@ -112,9 +113,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/wavetest.data.unityweb",
-                    frameworkUrl: "Build/wavetest.framework.js.unityweb",
-                    codeUrl: "Build/wavetest.wasm.unityweb",
+                    dataUrl: "Build/wave.data.unityweb",
+                    frameworkUrl: "Build/wave.framework.js.unityweb",
+                    codeUrl: "Build/wave.wasm.unityweb",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "IronPlanetStudios",
