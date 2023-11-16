@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content='width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=yes'>
-    <title>Unity WebGL Player | imagine wave</title>
+    <title>Unity WebGL Player | waveportal</title>
     <link rel="stylesheet" href="TemplateData/style.css">
     <style>
         html{
@@ -40,10 +40,6 @@
 		<imagetarget id='lady' src='targets/lady.png'></imagetarget>
 		<imagetarget id='reel' src='targets/reel.png'></imagetarget>
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
-		<imagetarget id='mid79084 Imagine_Flower Wall_Fix-PRINT' src='targets/mid79084 Imagine_Flower Wall_Fix-PRINT.png'></imagetarget>
-		<imagetarget id='79084 Imagine_Flower Wall_Fix-PRINT' src='targets/79084 Imagine_Flower Wall_Fix-PRINT.png'></imagetarget>
-		<imagetarget id='left79084 Imagine_Flower Wall_Fix-PRINT' src='targets/left79084 Imagine_Flower Wall_Fix-PRINT.png'></imagetarget>
-		<imagetarget id='croped-mid79084 Imagine_Flower Wall_Fix-PRINT' src='targets/croped-mid79084 Imagine_Flower Wall_Fix-PRINT.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <div id="startARDiv" class="ctaDiv">
@@ -81,7 +77,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/wave2.loader.js"></script>
+    <script src="Build/wavetest.loader.js"></script>
     <script>
             var unityCanvas = document.querySelector("#unity-canvas");
             var videoCanvas = document.querySelector("#video-canvas");
@@ -107,13 +103,13 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/wave2.data.unityweb",
-                    frameworkUrl: "Build/wave2.framework.js.unityweb",
-                    codeUrl: "Build/wave2.wasm.unityweb",
+                    dataUrl: "Build/wavetest.data",
+                    frameworkUrl: "Build/wavetest.framework.js",
+                    codeUrl: "Build/wavetest.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
-                    productName: "imagine wave",
-                    productVersion: "1.0.2",
+                    productName: "waveportal",
+                    productVersion: "0.1",
                     //webglContextAttributes: { "preserveDrawingBuffer": true },
                     // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
                     // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
